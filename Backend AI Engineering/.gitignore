@@ -1,0 +1,225 @@
+# FlyRank / Backend AI Engineering - Comprehensive .gitignore
+# Applies to most common languages/frameworks and local/dev artifacts.
+
+############################
+# General: OS & editor files
+############################
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/*.code-workspace
+
+# JetBrains
+.idea/
+*.iml
+
+# Sublime
+*.sublime-workspace
+*.sublime-project
+
+############################
+# Logs, temp, caches
+############################
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+*.pid
+*.seed
+*.pid.lock
+
+# Runtime/JIT/temp
+*.tmp
+*.temp
+*.swp
+*.swo
+*.swn
+*.bak
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Coverage / test output
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+pytest_cache/
+
+############################
+# Dependency directories
+############################
+node_modules/
+jspm_packages/
+
+# Python virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Poetry
+.venv/
+
+############################
+# Python: build/distribution
+############################
+build/
+dist/
+*.egg-info/
+*.eggs/
+
+# Sdist/wheels
+*.whl
+
+############################
+# Python: tooling
+############################
+.mypy_cache/
+.pytest_cache/
+
+# Ruff
+.ruff_cache/
+
+# Pytype
+.pytype/
+
+############################
+# FastAPI / Starlette / Uvicorn runtime files
+############################
+.venv/
+
+############################
+# Environment variables / secrets
+############################
+# Local env files
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Environment for container/local dev
+.envrc
+
+############################
+# dotenv for CI/dev
+############################
+# Keep example files tracked
+!.env.local
+
+############################
+# Git: ignore file patterns that commonly belong locally
+############################
+# Local gitignore created artifacts
+*.orig
+
+############################
+# Docker
+############################
+**/.env
+.dockerignore
+
+############################
+# Kubernetes / Helm
+############################
+*.tgz
+
+############################
+# Java / JVM
+############################
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven/Gradle caches
+.mvn/
+.gradle/
+build/
+
+# IntelliJ/NetBeans are covered above, but keep generic
+out/
+
+############################
+# C/C++
+############################
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+
+############################
+# Go
+############################
+bin/
+*.exe
+*.dll
+*.so
+*.dylib
+
+############################
+# Rust
+############################
+target/
+
+############################
+# .NET
+############################
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+############################
+# Ruby
+############################
+/vendor/
+*.gem
+
+############################
+# PHP
+############################
+/vendor/
+
+############################
+# Logs for tooling
+############################
+coverage.txt
+
+############################
+# Misc: generated docs
+############################
+docs/_build/
+docsite/build/
+
+############################
+# Keep important files tracked
+############################
+# Don't ignore anything else by being too aggressive
+# (No further patterns)
+
